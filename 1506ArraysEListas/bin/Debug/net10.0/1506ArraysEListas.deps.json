@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "1506ArraysEListas/1.0.0": {
+        "runtime": {
+          "1506ArraysEListas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "1506ArraysEListas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

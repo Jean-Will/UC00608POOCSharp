@@ -1,0 +1,7 @@
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\bin\Debug\Exercicio.exe.config
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\bin\Debug\Exercicio.exe
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\bin\Debug\Exercicio.pdb
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\obj\Debug\Exercicio.csproj.AssemblyReference.cache
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\obj\Debug\Exercicio.csproj.CoreCompileInputs.cache
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\obj\Debug\Exercicio.exe
+C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio\obj\Debug\Exercicio.pdb

@@ -1,0 +1,12 @@
+## Ignorar pastas de compilação do C#
+bin/
+obj/
+
+## Ignorar pastas ocultas do Visual Studio e VS Code
+.vs/
+.vscode/
+
+## Ignorar arquivos de preferências do usuário e logs
+*.user
+*.suo
+*.log

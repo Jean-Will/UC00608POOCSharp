@@ -1,7 +1,0 @@
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\bin\Debug\12_06_Ciclos.exe.config
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\bin\Debug\12_06_Ciclos.exe
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\bin\Debug\12_06_Ciclos.pdb
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\obj\Debug\12_06_Ciclos.csproj.AssemblyReference.cache
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\obj\Debug\12_06_Ciclos.csproj.CoreCompileInputs.cache
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\obj\Debug\12_06_Ciclos.exe
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\12_06_Ciclos\obj\Debug\12_06_Ciclos.pdb

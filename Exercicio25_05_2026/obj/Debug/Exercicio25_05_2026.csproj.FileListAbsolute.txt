@@ -1,7 +1,0 @@
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\bin\Debug\Exercicio25_05_2026.exe.config
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\bin\Debug\Exercicio25_05_2026.exe
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\bin\Debug\Exercicio25_05_2026.pdb
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\obj\Debug\Exercicio25_05_2026.csproj.AssemblyReference.cache
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\obj\Debug\Exercicio25_05_2026.csproj.CoreCompileInputs.cache
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\obj\Debug\Exercicio25_05_2026.exe
-C:\Users\jeanw\Desktop\CINEL\UC-00608 - DESEN. (POO) PROGRAMACAO ORIENTADA A OBJETO\Exercicio25_05_2026\obj\Debug\Exercicio25_05_2026.pdb

@@ -1,6 +1,8 @@
-﻿using System.Net;
+﻿using System.Globalization;
+using System.Net;
 using System.Numerics;
 using System.Reflection.Emit;
+using System.Reflection.Metadata;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -379,6 +381,10 @@ namespace _1506ArraysEListas
             #endregion
 
 
+
+
+
+
             //Exercícios — Secção 6
             // Exercício 13 — Primeiro foreach
             //32.Cria um array com os nomes de 5 países.
@@ -514,7 +520,7 @@ namespace _1506ArraysEListas
             //        poupouMais = poupanca[i];               
 
             //        Console.WriteLine($"Na {diaDaSemana[0]} foi o dia que poupou mais com o indice:{i} , o valor de: {poupouMais}");
-                     
+
             //    }
             //}
 
@@ -526,6 +532,30 @@ namespace _1506ArraysEListas
             //50.Mostra o tempo mais rápido(menor valor) e o mais lento.
             //51.Calcula a média dos tempos.
 
+            //float[] tempos = [69,73,70,77,63];
+            //float menorTempo = tempos[0];
+            //float maiorTempo = tempos[0];
+            //for (int i = 0; i < tempos.Length; i++)
+            //{
+            //    Console.WriteLine($"Os tempos dos nadadores {i+1} sao: {tempos[i]} segundos em 100 metros");
+            //}
+            //for (int i = 0; i < tempos.Length; i++)
+            //{
+            //    if (tempos[i] < menorTempo)
+            //    {
+            //        menorTempo = tempos[i];
+            //    }
+            //    else if (tempos[i] > maiorTempo)
+            //    {
+            //        maiorTempo = tempos[i];
+            //    }
+            //}
+            //Console.WriteLine($"O menor (<) tempo e: {menorTempo} segundos");
+            //Console.WriteLine($"O maior (>) tempo e: {maiorTempo} segundos");
+
+
+
+
 
             //Nível Médio
             // Exercício 19 — Painel meteorológico ⭐⭐
@@ -533,6 +563,62 @@ namespace _1506ArraysEListas
             //53.Usa for para mostrar: 'Segunda: 22°C — Ameno ☀️'(com classificação).
             //54.Usa foreach para calcular a média.
             //55.Mostra o dia mais quente e o dia mais frio(com o nome do dia).
+
+            //string[] diaDeSemana = ["Seg","Ter","Qua","Qui","Sex","Sab","Dom"];
+            //int[] tempDiaDeSemana = [18,17,20,22,19,16,23];
+            //string classificaTempo = "";
+            //int media = 0;
+            //int soma = 0;
+            //int diaMaisQuente = 0;
+            //int diaMaisFrio = tempDiaDeSemana[0];
+            //string classificaTempo2 = "";
+
+
+            //for (int i = 0; i < diaDeSemana.Length; i++)
+            //{
+            //    for (int c = 0; c < tempDiaDeSemana.Length; c++)
+            //    { 
+            //    }
+            //    Console.WriteLine($"Na {diaDeSemana[i]} ,vai estar: {tempDiaDeSemana[i]}°C");
+            //    if (tempDiaDeSemana[i] == 22 )
+            //    {
+            //        classificaTempo = diaDeSemana[i];
+            //    }
+
+            //}
+            //Console.WriteLine($"Na {classificaTempo} o tempo vai estar Ameno ");
+            //foreach (int p in tempDiaDeSemana)
+            //{
+            //    soma += p;
+
+            //}
+            //media = soma / tempDiaDeSemana.Length;
+            //Console.WriteLine($"A media da semana e: {media}");
+
+            //for (int i = 0; i < diaDeSemana.Length; i++)
+            //{
+            //    for (int c = 0; c < tempDiaDeSemana.Length; c++)
+            //    {
+            //        if (tempDiaDeSemana[i] > diaMaisQuente)
+            //        {
+            //            diaMaisQuente = tempDiaDeSemana[i];
+            //            classificaTempo2 = diaDeSemana[i];
+
+            //        }
+            //        else if (diaMaisQuente < diaMaisFrio)
+            //        {
+            //            diaMaisFrio = diaMaisQuente;
+            //            classificaTempo2 = diaDeSemana[i];
+            //        }
+
+            //    }
+
+            //}
+
+            //Console.WriteLine($"O dia mais quente e: {classificaTempo2} com a temperatura: {diaMaisQuente} ");
+            //Console.WriteLine($"O dia mais frio e: {classificaTempo2} com a temperatura: {diaMaisFrio}");
+
+
 
 
 
@@ -543,6 +629,52 @@ namespace _1506ArraysEListas
             //59.Aplica um desconto de 10 % ao total se este for superior a 50€.
             //60.Mostra o total final com e sem desconto.
 
+            //string[] produto = new string[5];
+            //float[] preco = new float[5];
+            //float soma = 0;
+            //float total = 0;
+            //float desconto = 0;
+            //float totalComDesconto = 0;
+
+
+            //for (int i = 0; i < produto.Length; i++)
+            //{
+            //    Console.WriteLine($"Escreva o nome do produto: ");
+            //    produto[i] = Console.ReadLine();
+
+            //}
+
+            //for (int c = 0; c < preco.Length; c++)
+            //{
+            //    Console.WriteLine($"Escreva o preco do produto: ");
+            //    preco[c] = float.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < produto.Length; i++)
+            //{
+            //    soma    += preco[i];
+            //    Console.Write($"Nome do produto: {produto[i]} ->  preco: {preco[i]}\n ");
+            //    total = soma;
+            //}
+            //if (total > 50)
+            //{
+            //    desconto = (total * 10) / 100;
+            //    totalComDesconto = total - desconto;
+            //    Console.WriteLine($"O total da lista com desconto e: {totalComDesconto}");
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"O total da lista e: {total}");
+
+            //}
+            //Console.WriteLine($"O total Final sem desconto: {total} e com desconto: {totalComDesconto} o desconto e de: {desconto}");
+
+
+
+
+
+
 
 
             // Exercício 21 — Votação ⭐⭐
@@ -551,6 +683,43 @@ namespace _1506ArraysEListas
             //63.Calcula o total de votos.
             //64.Mostra para cada candidato a percentagem de votos que obteve.
             //65.Anuncia o vencedor(quem tem mais votos).
+
+            //string[] candidatos = {"Candidato A ", "Candidato B ", "Candidato C ", "Candidato D " };
+            //int[] votos = {35,22,13,30};
+            //int soma = 0;
+            //int totalvotos = 0;
+            //int percentualDeVotos = 0;
+            //int vencedor = 0;
+            //string candVencedor = "";
+
+            //for (int i = 0; i < candidatos.Length; i++)
+            //{
+            //    Console.WriteLine($"O Candidato: {candidatos[i]} tem o total de: {votos[i]} Votos \n");
+            //    soma += votos[i];
+            //    totalvotos = soma;
+
+            //}
+
+            //Console.WriteLine($"Total de votos: {totalvotos} \n");
+
+
+            //for (int i = 0; i < votos.Length; i++)
+            //{
+            //    percentualDeVotos = (votos[i] * 100) / 100;
+            //    Console.WriteLine($"O Candidato: {candidatos[i]} tem um percentual de {percentualDeVotos}%");
+            //    if (votos[i] > vencedor)
+            //    {
+            //        vencedor = votos[i];
+            //        candVencedor = candidatos[i];
+
+            //    }
+            //}
+            //Console.WriteLine($"O vencedor e: {candVencedor} com {vencedor} votos obtidos");
+
+
+            //100 = 100%
+            //A = 35
+            //100* 35 = A * 100
 
 
             //Nível Desafio
@@ -561,6 +730,45 @@ namespace _1506ArraysEListas
             //69.Identifica os produtos com stock abaixo de 5 unidades e mostra um alerta.
             //70.Aplica desconto de 20 % aos produtos com mais de 20 unidades em stock.
 
+            //string[] nomeProduto = ["iphone 17","Samsung","Apple Watch","Ps5","Xbox-x"];
+            //int[] stockProduto = [3,4,13,22,27];
+            //float[] precoUnitario = [1100,990,350,450,399];
+            //float valorInventario = 0;
+            //string[] stockBaixo = new string[5];
+            //string[] recebeDesconto = new string[5];
+            //float calculaDesconto = 0;
+            //float aplicaDesconto = 0;
+
+            //for (int i = 0; i < nomeProduto.Length; i++)
+            //{
+            //    Console.WriteLine($"Nome Produto: {nomeProduto[i]}|Preco: {precoUnitario[i]}| Stock: {stockProduto[i]}\n");
+            //    valorInventario += precoUnitario[i];
+            //    if (stockProduto[i] < 5)
+            //    {
+            //        stockBaixo[i] += nomeProduto[i];
+            //    }
+
+            //    if (stockProduto[i] >= 20)
+            //    {
+            //        recebeDesconto[i] = nomeProduto[i];
+            //        calculaDesconto = (precoUnitario[i] * 20) / 100;
+            //        aplicaDesconto = precoUnitario[i] - calculaDesconto;
+            //        Console.WriteLine($"DESCONTO 20% no seguinte produtos: {nomeProduto[i]} , {aplicaDesconto} {recebeDesconto[i]}\n");
+            //    }
+
+            //}
+            //Console.WriteLine($"O Valor total do inventario: {valorInventario}\n");
+            //foreach (string p in stockBaixo)
+            //{
+            //    if (p !=" ")
+            //    {
+            //        Console.WriteLine($"{p} -> Estoque baixo!! ");
+            //    }
+            //}
+
+
+
+
 
             // Exercício 23 — Analisador de turma completo ⭐⭐⭐
             //71.Pede ao utilizador os nomes e notas de 6 alunos(dois arrays paralelos).
@@ -569,6 +777,76 @@ namespace _1506ArraysEListas
             //74.Mostra o nome do melhor e do pior aluno.
             //75.Mostra quantos alunos estão acima e abaixo da média.
             //76.Mostra uma lista separada de aprovados e reprovados.
+
+            string[] nomeAluno = new string [6];
+            float[] notaAluno = new float [6];
+            string[] classificacao = new string[6];
+            string[] reprovados = new string[6];
+            string[] aprovados = new string[6];
+            float media = 0;
+            float menorNota = notaAluno[0];
+            float maiorNota = notaAluno[0];
+            string melhorAluno = "";
+            string piorAluno = "";
+
+            for (int i = 1; i < nomeAluno.Length; i++)
+            {
+                Console.WriteLine($"Insira o {i} nome do aluno: {nomeAluno[i]}");
+                nomeAluno[i] = Console.ReadLine();
+            }
+            for (int i = 1; i < notaAluno.Length; i++)
+
+            {
+                Console.WriteLine($"Insira a {i} Nota do Aluno {nomeAluno[i]}");
+                notaAluno[i] = float.Parse(Console.ReadLine());
+            }
+
+            for (int i = 1; i < nomeAluno.Length; i++)
+            {
+                Console.WriteLine($"o Aluno: {nomeAluno[i]} tem nota: {notaAluno[i]}");
+                media += notaAluno[i] / notaAluno.Length;
+            }
+
+            for (int i = 0; i < notaAluno.Length; i++)
+            {
+                if (notaAluno[i] < 10)
+                {
+                    reprovados[i] = nomeAluno[i];
+                    classificacao[i] = "Reprovado";
+                }
+                else
+                {
+                    aprovados[i] = nomeAluno[i];
+                    classificacao[i] = "Aprovado";
+
+                }
+
+                if (notaAluno[i] < menorNota)
+                {
+                    menorNota = notaAluno[i];
+                }
+                if (notaAluno[i] > maiorNota)
+                {
+                    maiorNota = notaAluno[i];
+                }
+                Console.WriteLine($"A menor nota e: {menorNota} {nomeAluno[i]}");
+                Console.WriteLine($"A maior nota e: {maiorNota} {nomeAluno[i]}");
+
+
+
+            }
+            foreach (string ap in aprovados)
+            {
+                Console.WriteLine($"Alunos Aprovados: {ap}\n");
+            }
+            foreach(string rp in reprovados)
+            {
+                Console.WriteLine($"Alunos Reprovados: {rp}\n");
+            }
+
+            Console.WriteLine($"Media da Turma: {media}");
+            
+
 
 
             // Exercício 24 — DESAFIO FINAL — estatísticas de vendas ⭐⭐⭐

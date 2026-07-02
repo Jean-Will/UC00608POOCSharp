@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OMeuProjeto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb1c7887424e82ac84872b80453bd27c72a63028")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66da2f930aeae3b2380c11a6bacab02b8f3a9e02")]
 [assembly: System.Reflection.AssemblyProductAttribute("OMeuProjeto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OMeuProjeto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

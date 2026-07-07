@@ -778,74 +778,74 @@ namespace _1506ArraysEListas
             //75.Mostra quantos alunos estão acima e abaixo da média.
             //76.Mostra uma lista separada de aprovados e reprovados.
 
-            string[] nomeAluno = new string [6];
-            float[] notaAluno = new float [6];
-            string[] classificacao = new string[6];
-            string[] reprovados = new string[6];
-            string[] aprovados = new string[6];
-            float media = 0;
-            float menorNota = notaAluno[0];
-            float maiorNota = notaAluno[0];
-            string melhorAluno = "";
-            string piorAluno = "";
+            //string[] nomeAluno = new string [6];
+            //float[] notaAluno = new float [6];
+            //string[] classificacao = new string[6];
+            //string[] reprovados = new string[6];
+            //string[] aprovados = new string[6];
+            //float media = 0;
+            //float menorNota = notaAluno[0];
+            //float maiorNota = notaAluno[0];
+            //string melhorAluno = "";
+            //string piorAluno = "";
 
-            for (int i = 1; i < nomeAluno.Length; i++)
-            {
-                Console.WriteLine($"Insira o {i} nome do aluno: {nomeAluno[i]}");
-                nomeAluno[i] = Console.ReadLine();
-            }
-            for (int i = 1; i < notaAluno.Length; i++)
+            //for (int i = 1; i < nomeAluno.Length; i++)
+            //{
+            //    Console.WriteLine($"Insira o {i} nome do aluno: {nomeAluno[i]}");
+            //    nomeAluno[i] = Console.ReadLine();
+            //}
+            //for (int i = 1; i < notaAluno.Length; i++)
 
-            {
-                Console.WriteLine($"Insira a {i} Nota do Aluno {nomeAluno[i]}");
-                notaAluno[i] = float.Parse(Console.ReadLine());
-            }
+            //{
+            //    Console.WriteLine($"Insira a {i} Nota do Aluno {nomeAluno[i]}");
+            //    notaAluno[i] = float.Parse(Console.ReadLine());
+            //}
 
-            for (int i = 1; i < nomeAluno.Length; i++)
-            {
-                Console.WriteLine($"o Aluno: {nomeAluno[i]} tem nota: {notaAluno[i]}");
-                media += notaAluno[i] / notaAluno.Length;
-            }
+            //for (int i = 1; i < nomeAluno.Length; i++)
+            //{
+            //    Console.WriteLine($"o Aluno: {nomeAluno[i]} tem nota: {notaAluno[i]}");
+            //    media += notaAluno[i] / notaAluno.Length;
+            //}
 
-            for (int i = 0; i < notaAluno.Length; i++)
-            {
-                if (notaAluno[i] < 10)
-                {
-                    reprovados[i] = nomeAluno[i];
-                    classificacao[i] = "Reprovado";
-                }
-                else
-                {
-                    aprovados[i] = nomeAluno[i];
-                    classificacao[i] = "Aprovado";
+            //for (int i = 0; i < notaAluno.Length; i++)
+            //{
+            //    if (notaAluno[i] < 10)
+            //    {
+            //        reprovados[i] = nomeAluno[i];
+            //        classificacao[i] = "Reprovado";
+            //    }
+            //    else
+            //    {
+            //        aprovados[i] = nomeAluno[i];
+            //        classificacao[i] = "Aprovado";
 
-                }
+            //    }
 
-                if (notaAluno[i] < menorNota)
-                {
-                    menorNota = notaAluno[i];
-                }
-                if (notaAluno[i] > maiorNota)
-                {
-                    maiorNota = notaAluno[i];
-                }
-                Console.WriteLine($"A menor nota e: {menorNota} {nomeAluno[i]}");
-                Console.WriteLine($"A maior nota e: {maiorNota} {nomeAluno[i]}");
+            //    if (notaAluno[i] < menorNota)
+            //    {
+            //        menorNota = notaAluno[i];
+            //    }
+            //    if (notaAluno[i] > maiorNota)
+            //    {
+            //        maiorNota = notaAluno[i];
+            //    }
+            //    Console.WriteLine($"A menor nota e: {menorNota} {nomeAluno[i]}");
+            //    Console.WriteLine($"A maior nota e: {maiorNota} {nomeAluno[i]}");
 
 
 
-            }
-            foreach (string ap in aprovados)
-            {
-                Console.WriteLine($"Alunos Aprovados: {ap}\n");
-            }
-            foreach(string rp in reprovados)
-            {
-                Console.WriteLine($"Alunos Reprovados: {rp}\n");
-            }
+            //}
+            //foreach (string ap in aprovados)
+            //{
+            //    Console.WriteLine($"Alunos Aprovados: {ap}\n");
+            //}
+            //foreach(string rp in reprovados)
+            //{
+            //    Console.WriteLine($"Alunos Reprovados: {rp}\n");
+            //}
 
-            Console.WriteLine($"Media da Turma: {media}");
-            
+            //Console.WriteLine($"Media da Turma: {media}");
+
 
 
 
@@ -857,6 +857,18 @@ namespace _1506ArraysEListas
             //da média).
             //81.Mostra quantos dias foram de cada categoria.
             //82.Bónus: mostra se a segunda metade da semana foi melhor ou pior que a primeira
+
+            string[] diasDeVendas = {"Segunda","Terca","Quarta","Quinta","Sexta","Sabado","Domingo"};
+            float[] valoresDiarios = new float[7];
+
+            for (int i = 0; i < valoresDiarios.Length; i++)
+            {
+                Console.WriteLine($"Insira os valores diarios: ");
+                valoresDiarios[i] = float.Parse( Console.ReadLine() );
+                Console.WriteLine($"{diasDeVendas[i]} -> {valoresDiarios[i]}");
+
+            }
+
 
 
 

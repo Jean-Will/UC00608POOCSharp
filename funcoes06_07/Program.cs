@@ -77,17 +77,46 @@ namespace funcoes06_07
         //todos os resultados no Main.
 
 
-        static int LivrosRestantes(int total , int emprestados)
-        {
+        //static int LivrosRestantes(int total , int emprestados)
+        //{
          
-            return total - emprestados;
+        //    return total - emprestados;
             
-        }
+        //}
 
-        static bool TemAtraso(int dias)
-        {
-            return dias > 0;
-        }
+        //static bool TemAtraso(int dias)
+        //{
+
+        //    if (dias >0)
+        //    {
+        //        Console.WriteLine($"{true}");
+        //    }
+        //    return true;
+        //}
+
+
+        //static double CalcularMulta(int dias)
+        //{
+        //    double multa = dias * 0.50;
+        //    return multa;
+        //}
+
+        //static string Estado(bool disponivel)
+        //{
+        //    string estado = disponivel.ToString();
+        //    if (disponivel is true)
+        //    {
+        //        Console.WriteLine($"Disponivel ");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"Indisponivel ");
+        //    }
+        //    return estado;
+
+        //}
+
+
 
 
         static void Main(string[] args)
@@ -96,18 +125,30 @@ namespace funcoes06_07
             //MostraLivro("Rumo aos 120 ",2019 );
             //MostraDisponibilidade("Rumo aos 120",false);
             //MostraCategoria('S');
-            int stock = LivrosRestantes(14,8);
-            if (stock > 0)
-            {
-                Console.WriteLine($"Livros na estante: {stock}");
-            }
-            else
-            {
-                Console.WriteLine($"Nao temos livro na prateleira");
-            }
+            //int stock = LivrosRestantes(14,8);
+            //if (stock > 0)
+            //{
+            //    Console.WriteLine($"Livros na estante: {stock}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Nao temos livro na prateleira");
+            //}
 
-            bool atraso = TemAtraso(7);
-            // FALTA TEMRINAR !!!
+            //bool atraso = TemAtraso(2);
+
+            //double totalMulta = CalcularMulta(3);
+
+            //if (atraso is true)
+            //{
+            //    Console.WriteLine($"total de multa e {totalMulta}€ ");
+            //}
+            
+            //string respoEstado = Estado(false);
+            
+
+
+            
 
         }
 

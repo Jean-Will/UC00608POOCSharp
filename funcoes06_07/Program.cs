@@ -1,4 +1,8 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
+using System.Text;
+using System.Xml.Schema;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace funcoes06_07
 {
@@ -8,7 +12,7 @@ namespace funcoes06_07
 
 
         #region Exercícios3.1 
-        
+
         //        //        ✎ Exercícios · 3.1 Métodos void (sem retorno)
         //        //1. Cria um método void MostrarCabecalho() (sem parâmetros) que imprime «===
         //        //BIBLIOTECA DA ESCOLA ===».
@@ -60,12 +64,13 @@ namespace funcoes06_07
         //    Console.WriteLine($"Categoria: {cat}");
         //}  
 
-	#endregion
+        #endregion
 
 
-        
 
 
+
+        #region Exercicios3.2
 
         //        ✎ Exercícios · 3.2 Métodos com retorno
         //1. Cria int LivrosRestantes(int total, int emprestados) que devolve quantos livros
@@ -77,17 +82,17 @@ namespace funcoes06_07
         //todos os resultados no Main.
 
 
-        //static int LivrosRestantes(int total , int emprestados)
+        //static int LivrosRestantes(int total, int emprestados)
         //{
-         
+
         //    return total - emprestados;
-            
+
         //}
 
         //static bool TemAtraso(int dias)
         //{
 
-        //    if (dias >0)
+        //    if (dias > 0)
         //    {
         //        Console.WriteLine($"{true}");
         //    }
@@ -114,18 +119,105 @@ namespace funcoes06_07
         //    }
         //    return estado;
 
+        //} 
+        #endregion
+
+
+        #region  Exercícios_3.3
+
+        //        ✎ Exercícios · 3.3 Parâmetros por valor
+        //1. Cria void Emprestar(int copias) que faz copias-- lá dentro.No Main, mostra que a
+        //variável original NÃO diminui.
+        //Dica o método recebe uma cópia.
+        //Funções e Métodos em C#
+        //Manual do Formando · 15
+        //2. Cria void MudarTitulo(string t) que faz t = "ALTERADO".Confirma que o título original
+        //se mantém.
+        //3. Cria void AplicarDesconto(double preco) que faz preco = preco * 0.9.Mostra que o
+        //preço original fica igual.
+        //4. Num comentário no código, explica por palavras porque é que o valor original não muda.
+        //Dica pensa na fotocópia.
+
+
+        //static void Emprestar(int copias)
+        //{
+
+        //    Console.WriteLine($"{copias * 2}\n");
+
+        //}
+
+        //static void MudarTitulo(string t)
+        //{
+        //    Console.WriteLine($"\nALTERADO \n");
+        //}
+
+        //static void AplicarDesconto(double preco)
+        //{
+        //    double desconto =  preco - (preco * 0.90);
+        //    Console.WriteLine($" preco: {preco} - ({preco} * 0.90) = {desconto} \n");
+        //}
+        // ## EXPLICACAO 
+        // O valor original nao muda pois em C# alteramos uma copia do valor para alterar teriamos de
+        // usar o "ref" que aponta para o endereco de memoria 
+        #endregion
+
+
+
+        //        Exercícios · 3.4 Parâmetro ref
+        //1. Reescreve o exercício 1 de 3.3 com ref para que as cópias diminuam mesmo no Main.
+        //2. Cria void RegistarDevolucao(ref int emprestados) que faz emprestados--.
+        //Dica o ref aparece na definição e na chamada.
+        //Funções e Métodos em C#
+        //Manual do Formando · 17
+        //3. Cria void ReduzirMulta(ref double multa) que tira 1 € à multa (nunca abaixo de 0).
+        //4. Cria void MudarCategoria(ref char cat) que muda a categoria para 'A'. Mostra o valor
+        //antes e depois.
+
+
+        //static void Emprestar( ref int copias)
+        //{
+
+        //    Console.WriteLine($"{copias - 2} | Resultado das copias alterados com REF\n");
+
+        //}
+
+        //static void RegistrarDevolucao( ref int emprestado)
+        //{
+        //    Console.WriteLine($"{emprestado - 4} | resultado alterado com REF \n");
         //}
 
 
+        //static void ReduzirMulta(ref double multa )
+        //{
+        //    Console.WriteLine($" Esse e o valor da multa com desconto de 1€ = {multa - 1}€\n");
+        //}
+
+
+        //static void MudarCategoria(ref char cat)
+        //{
+        //    if (cat == 'B')
+        //    {
+        //        cat = 'A';
+        //        Console.WriteLine($"A categoria agora e: {cat} \n");
+        //    }
+            
+        //}
+
+                            /// COMPLETO ATE 3.4
 
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8; // caracateres 
+
+            //Exercicios 3.1
             //MostrarCabecalho();
-            //MostraLivro("Rumo aos 120 ",2019 );
-            //MostraDisponibilidade("Rumo aos 120",false);
+            //MostraLivro("Rumo aos 120 ", 2019);
+            //MostraDisponibilidade("Rumo aos 120", false);
             //MostraCategoria('S');
-            //int stock = LivrosRestantes(14,8);
+
+            //Exercicios 3.2
+            //int stock = LivrosRestantes(14, 8);
             //if (stock > 0)
             //{
             //    Console.WriteLine($"Livros na estante: {stock}");
@@ -143,12 +235,35 @@ namespace funcoes06_07
             //{
             //    Console.WriteLine($"total de multa e {totalMulta}€ ");
             //}
-            
+
             //string respoEstado = Estado(false);
-            
 
+            //Exercicios 3.3
+            //int a = 3;
+            //Emprestar(a);
+            //Console.WriteLine(a);
 
-            
+            //string t = "Titulo originAl se mantem \n";
+            //MudarTitulo(t);
+            //Console.WriteLine(t);
+
+            //double preco = 5.15;
+            //AplicarDesconto(5);
+            //Console.WriteLine($"o preco {preco} se matem \n");
+
+            // Exercicios 3.4
+            //int b = 5;
+            //Emprestar(ref b);
+            //int emprestado = 12;
+            //RegistrarDevolucao(ref emprestado);
+            //double multa = 12.50;
+            //ReduzirMulta(ref multa);
+            //char cat = 'B';
+            //Console.WriteLine($"Categoria antes de alterar {cat}");
+            //MudarCategoria(ref cat);
+
+            /// COMPLETO ATE 3.4
+
 
         }
 
